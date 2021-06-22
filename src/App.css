@@ -1,14 +1,123 @@
-.app{
+/* Left Side: Socials */
+.leftSide{
     display: flex;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-.app__menu{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
 
-    width: 250px;
-    height: 100vh;
+    background-color: rgb(233, 236, 241);
+}
+.menu-burger{
+    position: absolute;
+    top: 30px;
+    left: 30px;    
+    font-size: 20px;
+}
+.nav-buttons, .resume{
+    display: none;
+}
+.socials-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.socials-container > h4{
+    display: none;
+    padding: 0px 5px;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 310px;
+}
+.socials::after{
+    content: '';
+    height: 100px;
+    width: 2px;
+    background: black;
+}
+.socials li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .2s;
+}
+.socials li:hover{
+    transform: translateY(-5px);
+}
+.socials li a i{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ---- menu burger actions ---- */
+.menu-active{
+    justify-content: center;
+    width: 400px;
+}
+.menu-active .nav-buttons,
+.menu-active .resume,
+.menu-active .socials-container > h4{ 
+    display: inline; 
+}
+.menu-active .socials{
+    flex-direction: row;
+    width: 300px;
+    height: 80px;
+}
+.menu-active .socials::after{
+    display: none;
+}
+/* ----------------------------- */
+
+
+/* Right Side: Email */
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80px;
+
+    background-color: rgb(233, 236, 241);
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 310px;
+}
+.email::before{
+    content: "";
+    width: 2px;
+    height: 100px;
+    background: black;
+}
+.email a{
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    writing-mode: vertical-rl;
+    cursor: pointer;
+    transition: .2s;
+}
+.email a:hover{
+    transform: translateY(5px);
 }
