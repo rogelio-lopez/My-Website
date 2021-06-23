@@ -7,8 +7,11 @@ This is a MUCH NEEDED update on my Personal Website. I've improved with React an
 
 ### Screenshots
 
-<h4 align="left">Current Website</h4>
+<h5 align="left">Current Website:</h5>
 <img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="400px"/>
+
+<h5 align="right">Updated Website:</h5>
+
 
 <br/>
 
