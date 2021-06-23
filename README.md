@@ -5,11 +5,10 @@
 This is a MUCH NEEDED update on my Personal Website. I've improved with React and overall design, and have forgotten to implement that new knowledge into my Personal Website. So it's time to update (in this case redo the whole thing) and show what I've been up to!
 
 
-### Screenshot
+### Screenshots
 
-Current Website
-<img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="200px"/>
-![](./rogeliolopez-old.png)
+<h4 align="left">Current Website</h4>
+<img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="400px"/>
 
 
 ### Links
