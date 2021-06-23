@@ -10,7 +10,7 @@ This is a MUCH NEEDED update on my Personal Website. I've improved with React an
 <h4 align="left">Current Website</h4>
 <img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="400px"/>
 
-
+<br>
 ### Links
 
 - Site URL: [rogeliolopez.dev](https://rogeliolopez.dev)
