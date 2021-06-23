@@ -21,39 +21,36 @@ function App() {
         
         <i className="menu-burger fas fa-bars" onClick={toggleMenu}></i>
 
-        {/* nav items */}
-        <ul className="nav-buttons">
-          <li><a>About</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-
-        {/* resume */}
+        {/* On active burger */}
+        <div className="nav">
+          <p>Navigation</p>
+          <ul className="nav-list">
+            <li><a>About</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        {/* On active burger */}
         <div className="resume">
-          <button>resume</button>
+          <a>resume 📙</a>
         </div>
 
         <div className="socials-container">
-          <h4>Socials</h4>
-          <ul className="socials">
-            <li><a><i className="fab fa-github"></i></a></li>
-            <li><a><i className="fab fa-linkedin-in"></i></a></li>
-            <li><a><i className="fab fa-codepen"></i></a></li>
-            <li><a><i className="fab fa-instagram"></i></a></li>
-          </ul>
+          <p>Socials</p>
+          <div className="socials-list">
+            <ul className="socials">
+              <li><a><i className="fab fa-github"></i></a></li>
+              <li><a><i className="fab fa-linkedin-in"></i></a></li>
+              <li><a><i className="fab fa-codepen"></i></a></li>
+              <li><a><i className="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
         </div>
+
       </div>
 
 
-
-
-      {/* Notes
-
-        - Nav bar 
-        - with resume button
-        - No logo
-      
-        https://brittanychiang.com/ */}
+      {/* https://brittanychiang.com/ */}
 
 
       <div className="app__main">
