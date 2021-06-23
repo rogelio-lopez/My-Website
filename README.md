@@ -8,7 +8,7 @@ This is a MUCH NEEDED update on my Personal Website. I've improved with React an
 ### Screenshots
 
 <h5 align="left">Current Website:</h5>
-<img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="400px"/>
+<img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="800px"/>
 
 <h5 align="right">Updated Website:</h5>
 
