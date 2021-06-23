@@ -8,6 +8,7 @@ This is a MUCH NEEDED update on my Personal Website. I've improved with React an
 ### Screenshot
 
 Current Website
+<img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="200px"/>
 ![](./rogeliolopez-old.png)
 
 
