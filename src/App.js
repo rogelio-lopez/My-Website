@@ -29,7 +29,7 @@ function App() {
         - translateZ for 3d effect 
         - blurr (add top absolute layer to main)
       */}
-      <main className="app-main">
+      <main className={(toggleSideBar)? 'main-sidebar-active' : ''}>
         {/* 
           Header 
           - Hello message
@@ -37,6 +37,10 @@ function App() {
             - what i do 
             - what i like 
         */}
+
+        <section className="app-head">
+          
+        </section>
 
         {/* 
           About 

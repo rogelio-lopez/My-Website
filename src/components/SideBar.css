@@ -1,5 +1,6 @@
 /* SideBar elements: Not Active */
 .sidebar{
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
