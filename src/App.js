@@ -1,59 +1,35 @@
 import React, { useState } from 'react';
 import './App.css';
+import SideBar from './components/SideBar';
 
 
 function App() {
 
-  const [menuClick, setmenuClick] = useState(false);
-
-  const toggleMenu = () => setmenuClick(!menuClick); 
+  const [toggleSideBar, setToggleSideBar] = useState(false);
 
   return (
     <div className="app">
 
-      <div className="rightSide">
-        <div className="email">
-          <a>rogejlopez@gmail.com</a>
+      <div className="email">
+        <div className="email-container">
+          <a href="mailto:rogejlopez@gmail.com">rogejlopez@gmail.com</a>
         </div>
       </div>
 
-      <div className={(menuClick)? 'leftSide menu-active' : 'leftSide'}>
-        
-        <i className="menu-burger fas fa-bars" onClick={toggleMenu}></i>
-
-        {/* On active burger */}
-        <div className="nav">
-          <p>Navigation</p>
-          <ul className="nav-list">
-            <li><a>About</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </div>
-        {/* On active burger */}
-        <div className="resume">
-          <a>resume 📙</a>
-        </div>
-
-        <div className="socials-container">
-          <p>Socials</p>
-          <div className="socials-list">
-            <ul className="socials">
-              <li><a><i className="fab fa-github"></i></a></li>
-              <li><a><i className="fab fa-linkedin-in"></i></a></li>
-              <li><a><i className="fab fa-codepen"></i></a></li>
-              <li><a><i className="fab fa-instagram"></i></a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
+      <SideBar 
+        toggleSideBar={toggleSideBar} 
+        setToggleSideBar={setToggleSideBar} 
+      />
 
 
       {/* https://brittanychiang.com/ */}
 
 
-      <div className="app__main">
+      {/* On togglesidebar:
+        - translateZ for 3d effect 
+        - blurr (add top absolute layer to main)
+      */}
+      <main className="app-main">
         {/* 
           Header 
           - Hello message
@@ -77,7 +53,7 @@ function App() {
 
 
         {/* Contact */}
-      </div>
+      </main>
 
     </div>
   );

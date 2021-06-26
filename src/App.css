@@ -1,140 +1,5 @@
-/* Left Side: Not Active */
-.leftSide{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 80px;
-    transition: .5s ease;
-    background-color: rgb(233, 236, 241);
-}
-.menu-burger{
-    position: absolute;
-    top: 30px;
-    left: 30px;    
-    font-size: 20px;
-}
-.socials-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-}
-.socials-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 310px;
-}
-.socials-list::after{
-    content: '';
-    height: 100px;
-    width: 2px;
-    background: black;
-}
-.socials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 200px;
-}
-.socials li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .2s;
-}
-.socials li:hover{
-    transform: translateY(-5px);
-}
-.socials li a i{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-/* ---- Left Side Active ---- */
-.nav, 
-.resume,
-.socials-container > p{
-    display: none;
-}
-.nav{
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    margin-top: 15vh;
-    margin-bottom: 10vh;
-}
-.nav > p,
-.socials-container > p{
-    font-weight: 600;
-    padding: 0px 5px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 2px solid black;
-}
-.nav-list{
-    text-align: center;
-}
-.nav-list li{
-    padding: 5px;
-    margin: 10px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: .2s;
-}
-.nav-list li:hover{ letter-spacing: 2px; }
- 
-.resume{
-    margin-bottom: 10vh;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: .2s;
-}
-.resume:hover{ letter-spacing: 2px; }
-
-/*  Menu active actions */
-.menu-active{
-    justify-content: flex-start;
-    width: 400px;
-}
-.menu-active .nav,
-.menu-active .resume,
-.menu-active .socials-container > p{ 
-    display: flex; 
-    height: fit-content;
-}
-.menu-active .socials-list{
-    height: fit-content;
-    margin-bottom: 40%;
-}
-.menu-active .socials{
-    flex-direction: row;
-    width: 250px;
-    height: 80px;
-}
-.menu-active .socials-list::after{
-    display: none;
-}
-/* ----------------------------- */
-
-
-/* Right Side: Email */
-.rightSide{
+/* Email */
+.email{
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -142,31 +7,30 @@
     right: 0;
     height: 100%;
     width: 80px;
-
-    background-color: rgb(233, 236, 241);
 }
-.email{
+.email-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     height: 310px;
 }
-.email::before{
+.email-container::before{
     content: "";
     width: 2px;
     height: 100px;
     background: black;
 }
-.email a{
+.email-container a{
     padding: 0 10px;
     font-weight: 600;
     letter-spacing: 1.5px;
     text-align: center;
     writing-mode: vertical-rl;
+    color: black;
     cursor: pointer;
     transition: .2s;
 }
-.email a:hover{
+.email-container a:hover{
     transform: translateY(5px);
 }

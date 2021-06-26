@@ -1,0 +1,47 @@
+.burger{
+    position: absolute;
+    top: 28px;
+    left: auto;
+    right: auto;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.burger span{
+    position: absolute;
+    top: 45%;
+    height: 3px;
+    width: 1.5rem;
+    background-color: black;
+}
+.burger span::before,
+.burger span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 1.5rem;
+    background-color: black;
+}
+.burger span::before{
+    top: -.5rem;
+}
+.burger span::after{
+    top: .5rem;
+}
+
+/* Burger animation */
+.burger span, span::before, span::after{
+    transition: .5s;
+}
+.burger.burger-active span{
+    background: rgba(0,0,0,0);
+}
+.burger.burger-active span::before{
+    top: 0;
+    transform: rotate(45deg);
+}
+.burger.burger-active span::after{
+    top: 0;
+    transform: rotate(135deg);
+}
