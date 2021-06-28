@@ -31,7 +31,7 @@ function SideBar({ toggleSideBar, setToggleSideBar }) {
                 </div>
 
                 <div className="resume">
-                    <a>resume 📙</a>
+                    <a>resume</a>
                 </div>
 
                 <div className="socials">
@@ -40,16 +40,34 @@ function SideBar({ toggleSideBar, setToggleSideBar }) {
                     <div className="socials-container">
                         <ul className="socials-list">
                             <li>
-                                <a><i className="fab fa-github"></i></a>
+                                <a 
+                                href="https://github.com/rogelio-lopez"
+                                target="_blank" rel="noreferrer"
+                                >
+                                    <i className="fab fa-github"></i>
+                                </a>
                             </li>
                             <li>
-                                <a><i className="fab fa-linkedin-in"></i></a>
+                                <a
+                                href="https://www.linkedin.com/in/roge-lopez/"
+                                target="_blank" rel="noreferrer"
+                                >
+                                    <i className="fab fa-linkedin-in"></i>
+                                </a>
                             </li>
                             <li>
-                                <a><i className="fab fa-codepen"></i></a>
+                                <a
+                                href="https://codepen.io/rogelio-lopez"
+                                target="_blank" rel="noreferrer">
+                                    <i className="fab fa-codepen"></i>
+                                </a>
                             </li>
                             <li>
-                                <a><i className="fab fa-instagram"></i></a>
+                                <a
+                                href="https://www.instagram.com/rojo_lopz/"
+                                target="_blank" rel="noreferrer">
+                                    <i className="fab fa-instagram"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>

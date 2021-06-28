@@ -38,10 +38,11 @@
 /* ===== Main ===== */
 main{
     padding: 0px 80px;
-    transition: .2s;
+    transition: .25s .25s;
 }
 .main-sidebar-active{
-    transform: scale(.9);
+    transform: scale(.96);
+    transition: .25s;
 }
 .app-head{
     height: 100vh;

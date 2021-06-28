@@ -1,4 +1,4 @@
-/* SideBar elements: Not Active */
+/* SideBar elements: Showing when sidebar is NOT Active */
 .sidebar{
     z-index: 100;
     display: flex;
@@ -10,8 +10,12 @@
     left: 0;
     height: 100%;
     width: 80px;
-    transition: .5s ease;
+    box-shadow: 5px 0px 15px transparent;
     background-color: rgb(233, 236, 241);
+    transition: width .25s, box-shadow .25s .25s;
+}
+.sidebar a{
+    color: black;
 }
 .burger{
     position: absolute;
@@ -37,7 +41,6 @@
     width: 2px;
     background: black;
 }
-
 .socials-list{
     display: flex;
     flex-direction: column;
@@ -53,7 +56,7 @@
     width: 40px;
     overflow: hidden;
     cursor: pointer;
-    transition: .2s;
+    transition: transform .2s;
 }
 .socials-list li:hover{
     transform: translateY(-5px);
@@ -65,10 +68,10 @@
 .navigation, 
 .resume,
 .socials > p{
-    display: none;
+    opacity: 0;
 }
 
-/* SideBar elements: Active */
+/* SideBar elements: showing when sidebar IS active */
 .sidebar-container{
     display: flex;
     flex-direction: column;
@@ -78,6 +81,7 @@
     width: 80%;
 }
 .navigation{
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 200px;
@@ -92,40 +96,64 @@
     border-bottom: 2px solid black;
 }
 .navigation-list{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
 }
 .navigation-list li{
-    padding: 5px;
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    transition: .2s;
+    overflow: hidden;
+    transition: letter-spacing .2s;
 }
 .navigation-list li:hover{ letter-spacing: 2px; }
 .resume{
+    padding: 10px 15px;
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    transition: .2s;
+    border: solid 2px black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px black;
 }
-.resume:hover{ letter-spacing: 2px; }
+.resume:hover{ 
+    transform: translate(-5px, -5px); 
+    box-shadow: 5px 5px 0px black;
+}
 
-/*  sidebar active actions */
+/*  sidebar active actions: 
+    - changing opacities
+    - changing container sizes and flex-directions
+*/
 .sidebar-active{
     justify-content: center;
     width: 400px;
+    box-shadow: 5px 0px 15px lightcoral;
+    transition: width .5s .25s;
 }
 .sidebar-active .sidebar-container{
     justify-content: space-around;    
 }
 .sidebar-active .navigation,
-.sidebar-active .resume,
 .sidebar-active .socials > p{ 
-    display: flex; 
     height: fit-content;
+    opacity: 1; 
+    transition: opacity .25s .5s;
+}
+.sidebar-active .resume{
+    opacity: 1;
+    transition: transform .2s, box-shadow .2s, opacity .25s .5s;
 }
 .sidebar-active .socials-container{
     height: fit-content;
@@ -134,7 +162,25 @@
     display: none;
 }
 .sidebar-active .socials-list{
-    flex-direction: row;
-    width: 250px;
-    height: 80px;
+    animation: socialsAnimation .25s .5s both;
 }
+
+
+/* KEYFRAME: socials-list */
+@keyframes socialsAnimation {
+    0%{
+        flex-direction: column; 
+        opacity: 0;  
+    }
+    5%{
+        flex-direction: row;
+        width: 250px;
+        height: 80px;
+    }
+    100%{
+        flex-direction: row;
+        width: 250px;
+        height: 80px;
+        opacity: 1;
+    }
+} 
