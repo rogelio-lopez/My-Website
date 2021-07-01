@@ -6,7 +6,7 @@ import './SideBar.css';
 function SideBar({ toggleSideBar, setToggleSideBar }) {
 
     return (
-        <div className={(toggleSideBar)? 'sidebar sidebar-active': 'sidebar'}>
+        <aside className={(toggleSideBar)? 'sidebar sidebar-active': 'sidebar'}>
 
             <Burger 
                 toggleSideBar={toggleSideBar} 
@@ -74,7 +74,7 @@ function SideBar({ toggleSideBar, setToggleSideBar }) {
                 </div>
             </div>
 
-        </div>
+        </aside>
     )
 }
 

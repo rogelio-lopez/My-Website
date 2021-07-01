@@ -13,7 +13,7 @@
     top: 45%;
     height: 3px;
     width: 1.5rem;
-    background-color: black;
+    background-color: var(--primary);
 }
 .burger span::before,
 .burger span::after{
@@ -21,7 +21,8 @@
     position: absolute;
     height: 3px;
     width: 1.5rem;
-    background-color: black;
+    background-color: var(--primary);
+    transition: background-color .35s .35s, transform .35s;
 }
 .burger span::before{
     top: -.5rem;
@@ -31,17 +32,19 @@
 }
 
 /* Burger animation */
-.burger span, span::before, span::after{
-    transition: .5s;
+.burger-active.burger span{
+    background: rgba(0, 0, 0, 0);
+    transition: .35s .35s;
 }
-.burger.burger-active span{
-    background: rgba(0,0,0,0);
-}
-.burger.burger-active span::before{
+.burger-active.burger span::before{
     top: 0;
+    background-color: var(--background);
     transform: rotate(45deg);
+    transition: all .35s, transform .35s .35s, top .35s .35s;
 }
-.burger.burger-active span::after{
+.burger-active.burger span::after{
     top: 0;
     transform: rotate(135deg);
+    background-color: var(--background);
+    transition: all .35s, transform .35s .35s, top .35s .35s;    
 }

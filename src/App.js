@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="app">
 
-      <div className="email">
+      <aside id="email">
         <div className="email-container">
           <a href="mailto:rogejlopez@gmail.com">rogejlopez@gmail.com</a>
         </div>
-      </div>
+      </aside>
 
       <SideBar 
         toggleSideBar={toggleSideBar} 
@@ -22,31 +22,35 @@ function App() {
       />
 
 
-      {/* https://brittanychiang.com/ */}
-
-
-      {/* On togglesidebar:
-        - translateZ for 3d effect 
-        - blurr (add top absolute layer to main)
-      */}
       <main className={(toggleSideBar)? 'main-sidebar-active' : ''}>
-        {/* 
-          Header 
-          - Hello message
-          - Quick introduction
-            - what i do 
-            - what i like 
-        */}
 
-        <section className="app-head">
-          
+        {/* Head */}
+        <section id="head">
+          <div className="head-container">
+              <h3>Hi, I'm</h3>
+              <h1>Rogelio Lopez.</h1>
+              <p>I am a Key West based Web Developer who loves to create experiences on the Internet, Real Life, and everything in between.</p>
+          </div>
+
+          <div className="head-bgImg">
+              <div className="head-img"></div>
+          </div>
+
+          <div className="head-gradient"></div>
         </section>
 
-        {/* 
-          About 
-          - about myself (paragraph- short and to the point)
-          - Skills (add the ones most used- frontend)
-        */}
+        {/* About */}
+        <section id="about">
+          <div className="about-container">
+            <h3>About Me</h3>
+            <div className="about-content">
+              <p>Mauris quis mauris lorem. Cras fringilla velit nec dui laoreet congue. Aenean in lacinia odio. Nullam dapibus vestibulum ligula, a condimentum enim dignissim cursus. Proin odio quam, commodo eu dui ac, auctor pharetra erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div className="about-languages">
+
+            </div>
+          </div>
+        </section>
 
         {/* 
           Projects 

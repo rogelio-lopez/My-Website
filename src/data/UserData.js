@@ -1,4 +1,8 @@
 
+/** Separate files for user, projects and stuff then import into a single data file (if a lor of info) */
+
+
+
 // MY DATA
 export const myData = {
     name: 'Rogelio',

@@ -56,26 +56,19 @@ a{ text-decoration: none; }
 /* Color Scheme */
 body{
   /* Text */
-  --primary: var(--purp);
-  --primaryHighlight: var(--c);
-  --secondary: var(--d);
-  --secondaryHighlight: var(--c);
+  --primary: var(--cinnabar);
+  --secondary: var(--white);
+  --tertiary: var(--cool-grey);
 
-  /* Backrgound */
-  --background: var(--teal);
-  --backgroundHighlight: var(--c);
+  /* Background */
+  --background: var(--dark-fogra);
 
   /* coolors */
-  --xiketic: hsla(231, 82%, 6%, 1);
-  --dark-sienna: hsla(339, 80%, 12%, 1);
-  --rosewood: hsla(354, 93%, 22%, 1);
-  --dark-red: hsla(358, 97%, 31%, 1);
-  --rosso-corsa: hsla(0, 100%, 41%, 1);
-  --vermilion: hsla(12, 98%, 44%, 1);
-  --persimmon: hsla(23, 97%, 46%, 1);
-  --carrot-orange: hsla(34, 95%, 49%, 1);
-  --orange-web: hsla(39, 96%, 50%, 1);
-  --selective-yellow: hsla(43, 100%, 52%, 1);
+  --dark-fogra: #020618;
+  --xiketic: #03071E;
+  --cinnabar: #EF3E36;
+  --white: #ffffff;
+  --cool-grey: #8892af;
 }
 
 /* List Style */
