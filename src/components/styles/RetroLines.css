@@ -1,0 +1,46 @@
+/* Retro Lines Decoration */
+.retroLines{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.retroLines__black{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%; /* Height (length) of black lines */
+  width: 100%;
+}
+.retroLines__red,
+.retroLines__orange,
+.retroLines__yellow{
+  position: absolute;
+  left: 8px; /* Space in between colored lines */
+  bottom: 0;
+  height: 90%; /* Height (length) of colored lines */
+  width: 100%;
+}
+
+/* Line Colors */
+.retroLines__black{ background: var(--dark-black-fogra); }
+.retroLines__red{ background: var(--cinnabar); }
+.retroLines__orange{ background: var(--princeton-orange); }
+.retroLines__yellow{ background: var(--bright-yellow); }
+
+/* Inside white space - creates curved line effect */
+.retroLines__blackInside,
+.retroLines__redInside,
+.retroLines__orangeInside,
+.retroLines__yellowInside{
+  position: absolute;
+  left: 1.75vh; /* Vertical colored line width */
+  top: -1px;
+  height: 96.5%; /* Horizontal colored line height */
+  width: 100%;
+  background: var(--floral-white); /* Background color */
+  overflow: hidden;
+}
+.retroLines__blackInside{ border-bottom-left-radius: 200px; }
+.retroLines__redInside{ border-bottom-left-radius: 190px; }
+.retroLines__orangeInside{ border-bottom-left-radius: 180px; }
+.retroLines__yellowInside{ border-bottom-left-radius: 170px; }

@@ -1,12 +1,15 @@
 import React from 'react';
-import './Burger.css';
+import './styles/Burger.css';
 
-function Burger({ toggleSideBar, setToggleSideBar }) {
+function Burger({toggleSidebar, setToggleSidebar}) {
 
-    const toggle = () => setToggleSideBar(!toggleSideBar); 
+    const toggle = () => setToggleSidebar(!toggleSidebar); 
 
     return (
-        <div className={(toggleSideBar)? 'burger burger-active' : 'burger'} onClick={toggle}>
+        <div 
+            className={(toggleSidebar)? 'burger burger-active' : 'burger'}
+            onClick={toggle}
+        >
             <span></span>
         </div>
     )
