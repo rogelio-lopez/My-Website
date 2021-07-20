@@ -44,3 +44,32 @@
 .retroLines__redInside{ border-bottom-left-radius: 190px; }
 .retroLines__orangeInside{ border-bottom-left-radius: 180px; }
 .retroLines__yellowInside{ border-bottom-left-radius: 170px; }
+
+
+@media screen and (max-width: 768px){
+  .retroLines__blackInside{ border-bottom-left-radius: 160px; }
+  .retroLines__redInside{ border-bottom-left-radius: 150px; }
+  .retroLines__orangeInside{ border-bottom-left-radius: 140px; }
+  .retroLines__yellowInside{ border-bottom-left-radius: 130px; }
+}
+
+@media screen and (max-width: 425px){
+  .retroLines__red,
+  .retroLines__orange,
+  .retroLines__yellow{
+    left: 1vw; /* Space in between colored lines */
+  }
+
+  .retroLines__blackInside,
+  .retroLines__redInside,
+  .retroLines__orangeInside,
+  .retroLines__yellowInside{
+    left: 1.5vh;
+    height: 97%;
+  }
+
+  .retroLines__blackInside{ border-bottom-left-radius: 100px; }
+  .retroLines__redInside{ border-bottom-left-radius: 90px; }
+  .retroLines__orangeInside{ border-bottom-left-radius: 80px; }
+  .retroLines__yellowInside{ border-bottom-left-radius: 70px; }
+}
