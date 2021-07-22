@@ -1,8 +1,8 @@
 /* Retro Lines Decoration */
 .retroLines{
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 .retroLines__black{
   position: absolute;
@@ -47,13 +47,6 @@
 
 
 @media screen and (max-width: 768px){
-  .retroLines__blackInside{ border-bottom-left-radius: 160px; }
-  .retroLines__redInside{ border-bottom-left-radius: 150px; }
-  .retroLines__orangeInside{ border-bottom-left-radius: 140px; }
-  .retroLines__yellowInside{ border-bottom-left-radius: 130px; }
-}
-
-@media screen and (max-width: 425px){
   .retroLines__red,
   .retroLines__orange,
   .retroLines__yellow{
@@ -67,7 +60,14 @@
     left: 1.5vh;
     height: 97%;
   }
+  
+  .retroLines__blackInside{ border-bottom-left-radius: 130px; }
+  .retroLines__redInside{ border-bottom-left-radius: 120px; }
+  .retroLines__orangeInside{ border-bottom-left-radius: 110px; }
+  .retroLines__yellowInside{ border-bottom-left-radius: 100px; }
+}
 
+@media screen and (max-width: 425px){
   .retroLines__blackInside{ border-bottom-left-radius: 100px; }
   .retroLines__redInside{ border-bottom-left-radius: 90px; }
   .retroLines__orangeInside{ border-bottom-left-radius: 80px; }

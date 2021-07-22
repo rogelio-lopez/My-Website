@@ -186,6 +186,7 @@ button:hover {
 /* Tablet */
 @media screen and (max-width: 768px){
   .home__content{ 
+    width: 60vw;
     --home-h1-size: 70px;
   }
 
