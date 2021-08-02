@@ -17,67 +17,61 @@ function Home() {
       {/* Burger (only for tablets and phones) */}
       <Burger toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
 
+      {/* SideBar (only for tablets and phones) */}
+      <SideBar toggleSidebar={toggleSidebar}/>
+
       {/* Nav Links */}
       <nav className="home__nav">
-        <ul className="home__navList">
+        <ul>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li className="home__resumeBtn">
-            <a 
-              href={Resume}
-              target="_blank" 
-              rel="noreferrer">
-              <i className="far fa-file-alt"></i>Resume
+          <li>
+            <a href={Resume}
+               target="_blank" 
+               rel="noreferrer">
+              Resume
             </a>
           </li>
         </ul>
       </nav>
 
-      {/* SideBar (only for tablets and phones) */}
-      <SideBar toggleSidebar={toggleSidebar}/>
-
-      {/* Content */}
-      <main className="home__content">
-        <h1>Rogelio Lopez</h1>
-        <p>Web Developer</p>
-        <button>
-          <span>
-            <i className="fas fa-hand-point-right"></i>
-            About Me
-            <i className="fas fa-hand-point-left"></i>
-          </span>
-        </button>
-      </main>
-
       {/* Social Links */}
-      <aside className="home__links">
+      <aside className="home__socials">
         <ul>
           <li>
-            <a 
-              href="https://github.com/rogelio-lopez"
-              target="_blank" 
-              rel="noreferrer">
+            <a href="https://github.com/rogelio-lopez"
+               target="_blank" 
+               rel="noreferrer">
               <i className="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a 
-              href="https://www.linkedin.com/in/roge-lopez/"
-              target="_blank" 
-              rel="noreferrer">
+            <a href="https://www.linkedin.com/in/roge-lopez/"
+               target="_blank" 
+               rel="noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
           </li>
           <li>
-            <a 
-              href="https://www.instagram.com/rojo_lopz/"
-              target="_blank" 
-              rel="noreferrer">
+            <a href="https://www.instagram.com/rojo_lopz/"
+               target="_blank" 
+               rel="noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
           </li>
         </ul> 
       </aside>
+
+      {/* Content */}
+      <main className="home__content">
+        <h1>Rogelio <span>Lopez</span></h1>
+        <p>Web Developer</p>
+        <button>
+          <i className="fas fa-hand-point-right"></i>
+          About Me
+          <i className="fas fa-hand-point-left"></i>
+        </button>
+      </main>
 
       {/* Retro Lines Decorations */}
       <RetroLines />

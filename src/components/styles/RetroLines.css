@@ -3,21 +3,24 @@
   position: relative;
   height: 100%;
   width: 100%;
+
+  --border-radius: 18vh;
+  --line-width: 1.75vh;
 }
 .retroLines__black{
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 100%; /* Height (length) of black lines */
+  height: 100%; /* Height of black lines */
   width: 100%;
 }
 .retroLines__red,
 .retroLines__orange,
 .retroLines__yellow{
   position: absolute;
-  left: 8px; /* Space in between colored lines */
+  left: 0; /* Space in between colored lines */
   bottom: 0;
-  height: 90%; /* Height (length) of colored lines */
+  height: 90%; /* Height of colored lines */
   width: 100%;
 }
 
@@ -33,43 +36,45 @@
 .retroLines__orangeInside,
 .retroLines__yellowInside{
   position: absolute;
-  left: 1.75vh; /* Vertical colored line width */
+  left: var(--line-width); /* Vertical colored line width */
   top: -1px;
-  height: 96.5%; /* Horizontal colored line height */
+  height: calc(100% - var(--line-width)); /* Horizontal colored line height */
   width: 100%;
   background: var(--floral-white); /* Background color */
   overflow: hidden;
 }
-.retroLines__blackInside{ border-bottom-left-radius: 200px; }
-.retroLines__redInside{ border-bottom-left-radius: 190px; }
-.retroLines__orangeInside{ border-bottom-left-radius: 180px; }
-.retroLines__yellowInside{ border-bottom-left-radius: 170px; }
 
-
-@media screen and (max-width: 768px){
-  .retroLines__red,
-  .retroLines__orange,
-  .retroLines__yellow{
-    left: 1vw; /* Space in between colored lines */
-  }
-
-  .retroLines__blackInside,
-  .retroLines__redInside,
-  .retroLines__orangeInside,
-  .retroLines__yellowInside{
-    left: 1.5vh;
-    height: 97%;
-  }
-  
-  .retroLines__blackInside{ border-bottom-left-radius: 130px; }
-  .retroLines__redInside{ border-bottom-left-radius: 120px; }
-  .retroLines__orangeInside{ border-bottom-left-radius: 110px; }
-  .retroLines__yellowInside{ border-bottom-left-radius: 100px; }
+/* Border Radius */
+/* Outer most radius[180px] - ( line width * inside border # ) */
+.retroLines__blackInside{ 
+  border-bottom-left-radius: var(--border-radius); 
+}
+.retroLines__redInside{ 
+  border-bottom-left-radius: calc(var(--border-radius) - 1.75vh)
+}
+.retroLines__orangeInside{ 
+  border-bottom-left-radius: calc(var(--border-radius) - 3.5vh) 
+}
+.retroLines__yellowInside{ 
+  border-bottom-left-radius: calc(var(--border-radius) - 5.25vh) 
 }
 
-@media screen and (max-width: 425px){
-  .retroLines__blackInside{ border-bottom-left-radius: 100px; }
-  .retroLines__redInside{ border-bottom-left-radius: 90px; }
-  .retroLines__orangeInside{ border-bottom-left-radius: 80px; }
-  .retroLines__yellowInside{ border-bottom-left-radius: 70px; }
+
+@media screen and (max-width: 425px) {
+  .retroLines{ 
+    --line-width: 1.25vh; 
+    --border-radius: 15vh;
+  }
+  .retroLines__blackInside{ 
+    border-bottom-left-radius: var(--border-radius); 
+  }
+  .retroLines__redInside{ 
+    border-bottom-left-radius: calc(var(--border-radius) - 1.25vh)
+  }
+  .retroLines__orangeInside{ 
+    border-bottom-left-radius: calc(var(--border-radius) - 2.5vh) 
+  }
+  .retroLines__yellowInside{ 
+    border-bottom-left-radius: calc(var(--border-radius) - 3.75vh) 
+  }
 }

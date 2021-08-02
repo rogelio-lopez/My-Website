@@ -18,12 +18,15 @@ code {
 
 
 /* Type Scale */
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap');
 
 html {font-size: 100%;} /*16px*/
 
 body {
-  font-family: 'Fjalla One', sans-serif;
+  --font-one: 'Montserrat Alternates';
+  --font-two: 'Montserrat';
+
+  font-family: var(--font-two);
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
@@ -34,8 +37,8 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 400;
+  font-family: var(--font-one), var(--font-two);
+  font-weight: 500;
   line-height: 1.3;
 }
 
