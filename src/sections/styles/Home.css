@@ -39,7 +39,7 @@
   font-size: var(--home-p-size);
   color: var(--dark-black-fogra);
   cursor: pointer;
-  transition: .2s;
+  transition: .25s;
 }
 .home__nav a:hover{ 
   color: var(--princeton-orange);
@@ -51,7 +51,6 @@
   right: 20px;
   top: auto;
   bottom: auto;
-  height: var(--home-content-height);
 }
 .home__socials li{
   display: flex;
@@ -79,11 +78,11 @@
 /* ==== Content ==== */
 .home__content{
   position: absolute;
-  height: var(--home-content-height);
 }
 .home__content h1{
   display: flex;
   letter-spacing: 5px;
+  font-weight: 600;
   font-size: var(--home-h1-size);
   color: var(--dark-black-fogra);
 }
@@ -96,7 +95,6 @@
   font-size: var(--home-p-size);
   color: var(--dark-black-fogra);
 }
-/* Button Animation */
 .home__content button{
   margin: 20px 0px;
   padding: 8px 10px;
@@ -141,17 +139,23 @@
     display: none;
   }
   .home__content{
-    --home-h1-size: 70px;
+    height: fit-content;
+    padding-left: 20px;
   }
+}
+/* better fit and font-size transition between tablet & mobile*/
+@media screen and (max-width: 500px){
+  .home__content{ --home-h1-size: 16vw; }
 }
 /* Mobile L */
 @media screen and (max-width: 425px){
   .home__content{ 
-    width: 60vw;
     height: fit-content;
     padding-left: 20px;
-    --home-h1-size: 14.5vw;
     --home-p-size: 4.5vw;
+  }
+  .home__content h1{
+    letter-spacing: 2px;
   }
 }
 /* Mobile S */

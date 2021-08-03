@@ -26,8 +26,8 @@ body {
   --font-one: 'Montserrat Alternates';
   --font-two: 'Montserrat';
 
-  font-family: var(--font-two);
-  font-weight: 400;
+  font-family: var(--font-one);
+  font-weight: 600;
   line-height: 1.5;
   color: #000000;
 

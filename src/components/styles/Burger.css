@@ -26,6 +26,7 @@
 .burger span::before,
 .burger span::after{ 
     transition: .35s;
+    border-radius: 5px;
     background: var(--dark-black-fogra); 
 }
 .burger span::before{
