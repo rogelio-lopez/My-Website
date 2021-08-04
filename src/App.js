@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import InfoBox from './components/InfoBox';
+import PopupBox from './components/PopupBox';
 import Home from './sections/Home';
 
 
@@ -14,7 +14,7 @@ function App() {
       {/* Page Sections */}
       <main>
 
-        <InfoBox 
+        <PopupBox 
           toggleInfoBox={toggleInfoBox}
           setToggleInfoBox={setToggleInfoBox}
         />
