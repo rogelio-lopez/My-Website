@@ -37,7 +37,7 @@
   letter-spacing: 2px;
   font-weight: 700;
   font-size: var(--home-p-size);
-  color: var(--dark-black-fogra);
+  color: var(--black-fogra);
   cursor: pointer;
   transition: .25s;
 }
@@ -59,8 +59,8 @@
   cursor: pointer;
 }
 .home__socials .fab{
-  font-size: calc(var(--home-p-size) + 14px);
-  color: var(--dark-black-fogra);
+  font-size: 32px;
+  color: var(--black-fogra);
 }
 .home__socials .fa-instagram{
   font-weight: bold;
@@ -84,7 +84,7 @@
   letter-spacing: 5px;
   font-weight: 600;
   font-size: var(--home-h1-size);
-  color: var(--dark-black-fogra);
+  color: var(--black-fogra);
 }
 .home__content h1 span{
   margin: 0 20px;
@@ -93,7 +93,7 @@
   letter-spacing: 5px;
   font-weight: bold;
   font-size: var(--home-p-size);
-  color: var(--dark-black-fogra);
+  color: var(--black-fogra);
 }
 .home__content button{
   margin: 20px 0px;
@@ -102,9 +102,9 @@
   font-weight: bold;
   font-family: inherit;
   font-size: var(--home-p-size);
-  color: var(--dark-black-fogra);
+  color: var(--black-fogra);
   border-radius: 5px;
-  border: 2px solid var(--dark-black-fogra);
+  border: 2px solid var(--black-fogra);
   background: var(--bright-yellow);
   transition: .25s;
   cursor: pointer;
@@ -115,7 +115,7 @@
 }
 .home__content button:hover{
   color: var(--floral-white);
-  background: var(--dark-black-fogra);
+  background: var(--black-fogra);
 }
 
 

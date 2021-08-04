@@ -25,6 +25,7 @@ function App() {
           togglePopupBox={togglePopupBox}
           setTogglePopupBox={setTogglePopupBox} />
         
+        {/* Projects */}
         <div id="projects"><h1>Hello</h1></div>
 
 

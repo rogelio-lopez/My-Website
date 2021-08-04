@@ -22,7 +22,11 @@ function Home({togglePopupBox, setTogglePopupBox}) {
       <Burger toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
 
       {/* SideBar (only for tablets and phones) */}
-      <SideBar toggleSidebar={toggleSidebar}/>
+      <SideBar 
+        toggleSidebar={toggleSidebar}
+        setToggleSidebar={setToggleSidebar}
+        togglePopupBox={togglePopupBox}
+        setTogglePopupBox={setTogglePopupBox}/>
 
       {/* Nav Links */}
       <nav className="home__nav">

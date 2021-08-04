@@ -1,18 +1,21 @@
 .sidebar{
   z-index: 15;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   position: fixed;
   top: 0;
-  right: -360px;
+  right: 0;
   height: 100vh;
-  width: 350px;
+  width: 100%;
   background-color: var(--bright-yellow);
-  transition: .5s ease;
+  transform: translateX(100%);
+  transition: .5s;
 }
-.sidebar-active{ right: 0; }
+.sidebar-active{ 
+  transform: translateX(0); 
+}
 
 /* Navigation + Resume */
 .sidebar__nav{
@@ -20,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 20vh;
+  height: 25vh;
   margin-bottom: 10vh;
 }
 .sidebar__nav a{ 
@@ -48,15 +51,24 @@
 }
 .sidebar__links li a{
   padding: 5px 5px;
-  cursor: pointer;
+}
+.fa-instagram{
+  font-weight: bold;
 }
 
 /* Font sizes */
+.sidebar i,
+.sidebar a,
+.sidebar p{
+  color: var(--black-fogra);
+}
 .sidebar i{ font-size: 35px; } /* Icons */
-.sidebar a { font-size: 25px; } /* Text */
+.sidebar a,
+.sidebar p{ font-size: 25px; } /* Text */
 
 /* Hovers: nav links */
 .sidebar__nav a:hover,
+.sidebar__nav p:hover,
 .sidebar__resume:hover{
   letter-spacing: 2px;
 }
@@ -64,22 +76,8 @@
 .sidebar__links a:hover{
   transform: translateY(-5px);
 }
-.sidebar a{ transition: .2s;}
-
-
-/* ==== Media Queries ==== */
-
-/* Tablet */
-@media screen and (max-width: 768px) {
-  .sidebar{
-    display: flex;
-    width: 100%;
-    right: -100%;
-  }
-  .sidebar-active{
-    right: 0;
-  }
-  .sidebar__nav{
-    height: 25vh;
-  }
+.sidebar a,
+.sidebar p{ 
+  cursor: pointer;
+  transition: .2s;
 }

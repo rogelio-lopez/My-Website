@@ -29,6 +29,7 @@
   top: 0;
   height: 70%;
   color: var(--black-fogra);
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 20px 80px 0 rgb(0 0 0 / 55%);
   background: var(--floral-white);
   transform: translateX(100vw);
@@ -41,6 +42,7 @@
   bottom: 0;
   height: 30%;
   color: var(--floral-white);
+  border-radius: 0 0 10px 10px;
   box-shadow: 0 80px 80px 0 rgb(0 0 0 / 55%);
   background: var(--black-fogra);
   transform: translateX(-100vw);
@@ -74,11 +76,12 @@
   padding: 10px 15px;
   color: var(--black-fogra);
   border-radius: 2px;
-  background: var(--princeton-orange);
+  border-radius: 5px;
+  background: var(--bright-yellow);
   transition: .2s;
 }
 .popupBox__content a:hover{
-  background: var(--bright-yellow);
+  background: var(--cinnabar);
 }
 .popupBox__content a i{
   font-size: inherit;
@@ -121,7 +124,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 20px 0;
+  padding: 25px 0 10px 0;
 }
 .popupBox i{
   font-size: 3rem;

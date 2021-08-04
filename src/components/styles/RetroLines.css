@@ -1,6 +1,8 @@
 /* Retro Lines Decoration */
 .retroLines{
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -26,7 +28,7 @@
 }
 
 /* Line Colors */
-.retroLines__black{ background: var(--dark-black-fogra); }
+.retroLines__black{ background: var(--black-fogra); }
 .retroLines__red{ background: var(--cinnabar); }
 .retroLines__orange{ background: var(--princeton-orange); }
 .retroLines__yellow{ background: var(--bright-yellow); }
