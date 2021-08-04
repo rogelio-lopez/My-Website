@@ -4,3 +4,15 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Make site dark when popup is active */
+.popupBox__bg{
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .4);
+  transition: .5s;
+}

@@ -1,15 +1,19 @@
 import React from 'react';
 import './styles/PopupBox.css';
 
-function PopupBox() {
+function PopupBox({togglePopupBox, setTogglePopupBox}) {
+
+  const handleClosingPopup = () =>{
+    setTogglePopupBox(!togglePopupBox);
+  }
 
   return (
-    <div className="popupBox">
+    <div className={(togglePopupBox)? 'popupBox popupBox-active' : 'popupBox'}>
 
-      <div className="popupBox__close"></div>
+      <div className="popupBox__close" onClick={handleClosingPopup}></div>
 
       {/* About me half */}
-      <aside>
+      <aside className={(togglePopupBox)? 'popupBox__top popupBox__top-active' : 'popupBox__top'}>
         <div className="popupBox__content popopBox__top">
           <h3>About Me</h3>
           <small>Web Developer.</small>
@@ -24,23 +28,23 @@ function PopupBox() {
           </p>
 
           <ul>
-            <li><i class="fab fa-html5"></i></li>
-            <li><i class="fab fa-css3-alt"></i></li>
-            <li><i class="fab fa-js"></i></li>
-            <li><i class="fab fa-react"></i></li>
-            <li><i class="fab fa-figma"></i></li>
+            <li><i className="fab fa-html5"></i></li>
+            <li><i className="fab fa-css3-alt"></i></li>
+            <li><i className="fab fa-js"></i></li>
+            <li><i className="fab fa-react"></i></li>
+            <li><i className="fab fa-figma"></i></li>
           </ul>
         </div>
       </aside>
 
       {/* Contact Form  */}
-      <aside>
+      <aside className={(togglePopupBox)? 'popupBox__bottom popupBox__bottom-active' : 'popupBox__bottom'}>
         <div className="popupBox__content">
           <h3>Get in touch!</h3>
           <small>New projects, freelance inquiry or even a coffee.</small>
           <a href="mailto:rogejlopez@gmail.com">
             Email Me
-            <i class="far fa-paper-plane"></i>
+            <i className="far fa-paper-plane"></i>
           </a>
         </div>
       </aside>

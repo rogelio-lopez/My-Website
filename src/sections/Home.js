@@ -7,9 +7,13 @@ import SideBar from '../components/SideBar';
 
 import Resume from '../images/First_Resume.PDF';
 
-function Home() {
+function Home({togglePopupBox, setTogglePopupBox}) {
 
   const [ toggleSidebar, setToggleSidebar ] = useState(false);
+
+  const handleOpenPopup = () =>{
+    setTogglePopupBox(!togglePopupBox);
+  }
 
   return (
     <section id="home">
@@ -24,7 +28,7 @@ function Home() {
       <nav className="home__nav">
         <ul>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onClick={handleOpenPopup}>Contact</a></li>
           <li>
             <a href={Resume}
                target="_blank" 
@@ -66,7 +70,7 @@ function Home() {
       <main className="home__content">
         <h1>Rogelio <span>Lopez</span></h1>
         <p>Web Developer</p>
-        <button>
+        <button onClick={handleOpenPopup}>
           <i className="fas fa-hand-point-right"></i>
           About Me
           <i className="fas fa-hand-point-left"></i>

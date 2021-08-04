@@ -66,9 +66,6 @@
     --line-width: 1.25vh; 
     --border-radius: 15vh;
   }
-  .retroLines__black{
-    border-bottom-left-radius: calc(var(--border-radius) + 1.75vh);
-  }
   .retroLines__blackInside{ 
     border-bottom-left-radius: var(--border-radius); 
   }

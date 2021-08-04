@@ -73,11 +73,6 @@
 @media screen and (max-width: 768px) {
   .sidebar{
     display: flex;
-  }
-}
-/* Mobile L - S */
-@media screen and (max-width: 425px) {
-  .sidebar{
     width: 100%;
     right: -100%;
   }
