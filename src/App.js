@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import PopupBox from './components/PopupBox';
+import Footer from './sections/Footer';
 import Home from './sections/Home';
+import Projects from './sections/Projects';
 
 
 function App() {
@@ -11,9 +13,7 @@ function App() {
   return (
     <div className="app">
 
-      {/* Page Sections */}
       <main>
-
         {/* About Me / Contact Email Pop-up */}
         <div className={(togglePopupBox)? "popupBox__bg" : ''}></div>
         <PopupBox 
@@ -26,9 +26,10 @@ function App() {
           setTogglePopupBox={setTogglePopupBox} />
         
         {/* Projects */}
-        <div id="projects"><h1>Hello</h1></div>
+        <Projects />
 
-
+        {/* Footer */}
+        <Footer />
       </main>
 
     </div>

@@ -1,0 +1,128 @@
+.project{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 80%;
+  max-width: 750px;
+  margin-bottom: 50px;
+  border: solid 10px var(--floral-white);
+  color: var(--floral-white);
+  background: var(--black-fogra);
+}
+.project-left{ align-self: flex-start; }
+.project-right{ align-self: flex-end; }
+
+.project__content{
+  display: flex;
+  height: 85%;
+  width: 100%;
+}
+.project__content-reverse{ flex-direction: row-reverse; }
+
+.project__image{
+  height: 100%;
+  width: 50%;
+  background: url('../../images/image.jpg');
+  background-size: cover;
+}
+.project__text{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-around;
+  height: 90%;
+  width: 40%;
+  padding-left: 5%;
+}
+.project__text h3{
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.project__text p{
+  font-size: .9rem;
+  font-weight: 500;
+}
+.project__text ul{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.project__text a{
+  width: fit-content;
+  padding: 10px 15px;
+  color: var(--black-fogra);
+  border-radius: 5px;
+  background: var(--cinnabar);
+}
+
+.project__retroLines{
+  position: relative;
+  height: 5%;
+  width: 100%;
+}
+.project__retroLines span{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--princeton-orange);
+}
+.project__retroLines span::before{
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bright-yellow);
+}
+.project__retroLines span::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cinnabar);
+}
+
+/* ==== Media Queries ==== */
+@media screen and (max-width: 768px){
+  .project__text ul{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px){
+  .project{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 80%;
+    max-width: 300px;
+    min-width: 250px;
+  }
+  .project__content{
+    flex-direction: column;
+  }
+  .project__image{
+    height: 50%;
+    width: 100%;
+  }
+  .project__text{
+    height: 50%;
+    width: 90%;
+  }
+  .project__text h3{
+    font-size: 1.2rem;
+  }
+  .project__text p{
+    font-size: .8rem;
+  }
+  .project__text a{
+    font-size: .8rem;    
+    padding: 5px 10px;
+  }
+}

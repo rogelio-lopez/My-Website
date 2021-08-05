@@ -104,7 +104,7 @@
   font-size: var(--home-p-size);
   color: var(--black-fogra);
   border-radius: 5px;
-  border: 2px solid var(--black-fogra);
+  border: 3px solid var(--black-fogra);
   background: var(--bright-yellow);
   transition: .25s;
   cursor: pointer;

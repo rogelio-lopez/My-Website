@@ -29,11 +29,13 @@
   top: 0;
   height: 70%;
   color: var(--black-fogra);
-  border-radius: 10px 10px 0 0;
   box-shadow: 0 20px 80px 0 rgb(0 0 0 / 55%);
   background: var(--floral-white);
   transform: translateX(100vw);
   transition: .5s;
+
+  border: solid 10px var(--black-fogra);
+  border-bottom: none;
 }
 .popupBox__top-active{
   transform: translateX(0);
@@ -42,11 +44,13 @@
   bottom: 0;
   height: 30%;
   color: var(--floral-white);
-  border-radius: 0 0 10px 10px;
   box-shadow: 0 80px 80px 0 rgb(0 0 0 / 55%);
   background: var(--black-fogra);
   transform: translateX(-100vw);
   transition: .5s;
+
+  border: solid 10px var(--black-fogra);
+  border-top: none;
 }
 .popupBox__bottom-active{
   transform: translateX(0);
@@ -75,7 +79,6 @@
   width: fit-content;
   padding: 10px 15px;
   color: var(--black-fogra);
-  border-radius: 2px;
   border-radius: 5px;
   background: var(--bright-yellow);
   transition: .2s;
@@ -166,7 +169,7 @@
     font-size: .9rem;
   }
   .popupBox__close{
-    top: 10px;
+    top: 20px;
     right: 20px;
   }
   .popupBox__close::before{
