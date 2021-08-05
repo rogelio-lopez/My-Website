@@ -5,9 +5,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
-  background-color: var(--floral-white);
-  
+  background-color: red;
 
   --home-p-size: 16px;
   --home-h1-size: 80px;

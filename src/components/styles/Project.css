@@ -112,7 +112,7 @@
     width: 100%;
   }
   .project__text{
-    height: 50%;
+    height: 48%;
     width: 90%;
   }
   .project__text h3{
@@ -124,5 +124,14 @@
   .project__text a{
     font-size: .8rem;    
     padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .project__content{
+    height: 91%;
+  }
+  .project__retroLines{
+    height: 3%;
   }
 }

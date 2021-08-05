@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Project from '../components/Project';
 import './styles/Projects.css';
 
@@ -18,7 +18,7 @@ function Projects() {
       <div className="projects__list">
         {projects.map((proj, index) => {
           return(
-            <Project title={proj} index={index}/>
+            <Project title={proj} index={index} key={index}/>
           )
         })}
       </div>

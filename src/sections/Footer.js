@@ -6,7 +6,7 @@ function Footer() {
     <footer>
 
       <p>
-        Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> by <a href="http://rogeliolopez.dev" target="_blank" rel="noreferrer">Rogelio Lopez</a>
+        Made with <i className="fas fa-heart"></i> & <i className="fas fa-coffee"></i> by <a href="http://rogeliolopez.dev" target="_blank" rel="noreferrer">Rogelio Lopez</a>
       </p>
 
       <ul>

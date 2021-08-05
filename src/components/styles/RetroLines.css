@@ -6,7 +6,7 @@
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-
+  
   --border-radius: 18vh;
   --line-width: 1.75vh;
 }

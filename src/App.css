@@ -1,4 +1,7 @@
-
+.app{
+  display: flex;
+  flex-direction: column;
+}
 /* Make site dark when popup is active */
 .popupBox__bg{
   z-index: 30;

@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: -webkit-fill-available;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -20,7 +21,10 @@ code {
 /* Type Scale */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap');
 
-html {font-size: 100%;} /*16px*/
+html {
+  font-size: 100%;
+  height: -webkit-fill-available;
+} /*16px*/
 
 body {
   --font-one: 'Montserrat Alternates';

@@ -18,6 +18,9 @@ function Home({togglePopupBox, setTogglePopupBox}) {
   return (
     <section id="home">
 
+      {/* Retro Lines Decorations */}
+      <RetroLines />
+
       {/* Burger (only for tablets and phones) */}
       <Burger toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
 
@@ -80,9 +83,6 @@ function Home({togglePopupBox, setTogglePopupBox}) {
           <i className="fas fa-hand-point-left"></i>
         </button>
       </main>
-
-      {/* Retro Lines Decorations */}
-      <RetroLines />
 
     </section>
   )

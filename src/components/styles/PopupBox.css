@@ -184,6 +184,9 @@
 }
 /* Mobile L */
 @media screen and (max-width: 425px){
+  .popupBox{
+    margin-left: -2.5%;
+  }
   .popupBox__content h3{
     font-size: 1.1rem;
   }
@@ -200,7 +203,7 @@
     font-size: 2.5rem;
   }
 }
-/* Mobile L */
+/* Mobile M */
 @media screen and (max-width: 375px){
   .popupBox__content h3{
     font-size: 1rem;
