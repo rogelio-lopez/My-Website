@@ -10,13 +10,6 @@
   --border-radius: 18vh;
   --line-width: 1.75vh;
 }
-.retroLines__black{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100%; /* Height of black lines */
-  width: 100%;
-}
 .retroLines__red,
 .retroLines__orange,
 .retroLines__yellow{
@@ -28,7 +21,7 @@
 }
 
 /* Line Colors */
-.retroLines__black{ background: var(--black-fogra); }
+.retroLines{ background: var(--black-fogra); }
 .retroLines__red{ background: var(--cinnabar); }
 .retroLines__orange{ background: var(--princeton-orange); }
 .retroLines__yellow{ background: var(--bright-yellow); }

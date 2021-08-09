@@ -13,24 +13,21 @@ function App() {
   return (
     <div className="app">
 
-      <main>
-        {/* About Me / Contact Email Pop-up */}
-        <div className={(togglePopupBox)? "popupBox__bg" : ''}></div>
-        <PopupBox 
-          togglePopupBox={togglePopupBox}
-          setTogglePopupBox={setTogglePopupBox} />
+      <div className={(togglePopupBox)? "popupBox__bg" : ''}></div>
+      <PopupBox 
+        togglePopupBox={togglePopupBox}
+        setTogglePopupBox={setTogglePopupBox} />
 
-        {/* Home */}
-        <Home 
-          togglePopupBox={togglePopupBox}
-          setTogglePopupBox={setTogglePopupBox} />
-        
-        {/* Projects */}
-        <Projects />
+      {/* Home */}
+      <Home 
+        togglePopupBox={togglePopupBox}
+        setTogglePopupBox={setTogglePopupBox} />
+      
+      {/* Projects */}
+      <Projects />
 
-        {/* Footer */}
-        <Footer />
-      </main>
+      {/* Footer */}
+      <Footer />
 
     </div>
   );

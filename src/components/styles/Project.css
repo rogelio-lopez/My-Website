@@ -48,6 +48,9 @@
   justify-content: space-between;
   width: 60%;
 }
+.project__text ul i{
+  font-size: 26px;
+}
 .project__text a{
   width: fit-content;
   padding: 10px 15px;
@@ -91,7 +94,7 @@
 /* ==== Media Queries ==== */
 @media screen and (max-width: 768px){
   .project__text ul{
-    width: 80%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 650px){

@@ -1,24 +1,51 @@
+/* eslint-disable no-unreachable */
 import React from 'react';
 import './styles/Project.css';
 
-function Project({title, index}) {
+function Project({proj, index}) {
+
+  const returnTechIcon = (techName) => {
+
+    switch(techName){
+      case 'html':
+        return (<i className="fab fa-html5"></i>);
+        break;
+      case 'css':
+        return (<i className="fab fa-css3-alt"></i>);
+        break;
+      case 'js':
+        return (<i className="fab fa-js"></i>);
+        break;
+      case 'react':
+        return (<i className="fab fa-react"></i>);
+        break;
+      default:
+        console.log('Technology not found');
+    }
+    
+  }
+
   return (
     <div className={(index % 2 === 0)? "project project-left" : "project project-right"}>
       <div className={(index % 2 === 0)? "project__content" : "project__content project__content-reverse"}>
         <div className="project__image"></div>
         
         <div className="project__text">
-          <h3>{title}</h3>
+          <h3>{proj.name}</h3>
 
-          <p>This is a short description of the project and what it does.</p>
+          <p>{proj.description}</p>
 
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
+            {proj.tech.map((tech) => {
+              return(
+                <li key={tech.name}>{
+                  returnTechIcon(tech)
+                }</li>
+              )
+            })}
           </ul>
 
-          <a href="#">Check it out!</a>
+          <a href={proj.link} target="_blank" rel="noreferrer">Check it out!</a>
         </div>
       </div>
       <div className="project__retroLines"><span></span></div>

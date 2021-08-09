@@ -21,10 +21,10 @@ function PopupBox({togglePopupBox, setTogglePopupBox}) {
             I'm Rogelio Lopez, a 24-year-old Web Developer born in Mexico and raised in Key West, Florida.
           </p>
           <p>
-            I enjoy solving problems and constantly learning new things on side projects to create rich web experiences, applications, and overall cool things with web technologies. 
+            I enjoy solving problems, learning new skills, and working on side projects to create rich web experiences & web applications.
           </p>
           <p>
-            I enjoy solving problems and constantly learning new things on side projects to create rich web experiences.
+            I'm actively looking for job opportunities that will allow me to excel in my career and build cool stuff.
           </p>
 
           <ul>

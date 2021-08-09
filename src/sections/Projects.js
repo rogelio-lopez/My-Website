@@ -5,9 +5,24 @@ import './styles/Projects.css';
 function Projects() {
 
   const projects = [
-    'Project One',
-    'Project Two',
-    'Project Three'
+    {
+      name: 'Project One',
+      description: 'This is a short description of the project one',
+      tech: ['html', 'css', 'js'],
+      link: 'www.google.com'
+    },
+    {
+      name: 'Project two',
+      description: 'This is a short description of the project two',
+      tech: ['html', 'css', 'js'],
+      link: 'www.google.com'
+    },
+    {
+      name: 'Project three',
+      description: 'This is a short description of the project three',
+      tech: ['html', 'css', 'js'],
+      link: 'https://www.google.com'
+    }
   ]
 
   return (
@@ -18,7 +33,7 @@ function Projects() {
       <div className="projects__list">
         {projects.map((proj, index) => {
           return(
-            <Project title={proj} index={index} key={index}/>
+            <Project proj={proj} index={index} key={proj.name}/>
           )
         })}
       </div>
