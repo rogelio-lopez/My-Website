@@ -6,23 +6,17 @@ function Projects() {
 
   const projects = [
     {
-      name: 'Project One',
-      description: 'This is a short description of the project one',
-      tech: ['html', 'css', 'js'],
+      name: 'IWPS Services',
+      description: 'IWPS Services is an international wealth planning company.',
+      tech: ['html', 'css', 'react'],
       link: 'www.google.com'
     },
     {
-      name: 'Project two',
-      description: 'This is a short description of the project two',
-      tech: ['html', 'css', 'js'],
-      link: 'www.google.com'
+      name: 'Kim\'s Kuban',
+      description: 'Kim\'s Kuban is a popular Key West restaurant.',
+      tech: ['html', 'css', 'react'],
+      link: 'https://kimskuban.com/'
     },
-    {
-      name: 'Project three',
-      description: 'This is a short description of the project three',
-      tech: ['html', 'css', 'js'],
-      link: 'https://www.google.com'
-    }
   ]
 
   return (
