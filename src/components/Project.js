@@ -28,7 +28,10 @@ function Project({proj, index}) {
   return (
     <div className={(index % 2 === 0)? "project project-left" : "project project-right"}>
       <div className={(index % 2 === 0)? "project__content" : "project__content project__content-reverse"}>
-        <div className="project__image"></div>
+        <div 
+          className="project__image" 
+          style={{backgroundImage: `url(${proj.img})`}}>
+        </div>
         
         <div className="project__text">
           <h3>{proj.name}</h3>

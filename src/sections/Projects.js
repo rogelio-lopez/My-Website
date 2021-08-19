@@ -1,6 +1,9 @@
 import React from 'react';
 import Project from '../components/Project';
 import './styles/Projects.css';
+import KimsPage from '../images/KimsPage.png';
+import IwpsPage from '../images/IwpsPage.png';
+import AmazonClone from '../images/AmazonClone.png';
 
 function Projects() {
 
@@ -9,19 +12,22 @@ function Projects() {
       name: 'Kim\'s Kuban',
       description: 'Kim\'s Kuban is a popular Key West restaurant.',
       tech: ['html', 'css', 'react'],
-      link: 'https://kimskuban.com/'
+      link: 'https://kimskuban.com/',
+      img: KimsPage,
     },
     {
       name: 'IWPS Services',
       description: 'IWPS Services is an international wealth planning company.',
       tech: ['html', 'css', 'react'],
-      link: 'https://iwps-services.web.app'
+      link: 'https://iwps-services.web.app',
+      img: IwpsPage,
     },
     {
       name: 'Amazon Clone',
       description: 'Amazon clone using React and Firebase authentication.',
-      tech: ['react'],
-      link: 'https://clone-92a6d.web.app/'
+      tech: ['html', 'css', 'react'],
+      link: 'https://clone-92a6d.web.app/',
+      img: AmazonClone,
     },
   ]
 

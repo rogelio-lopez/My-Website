@@ -21,6 +21,14 @@
   max-width: 850px;
 }
 
+
+@media screen and (max-width: 768px) {
+  .projects__list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 /* Mobile L */
 @media screen and (max-width: 435px) {
   #projects h2{
