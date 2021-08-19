@@ -15,7 +15,7 @@ function Projects() {
       name: 'IWPS Services',
       description: 'IWPS Services is an international wealth planning company.',
       tech: ['html', 'css', 'react'],
-      link: 'https://iwps-a87bf.web.app/'
+      link: 'https://iwps-services.web.app'
     },
     {
       name: 'Amazon Clone',
