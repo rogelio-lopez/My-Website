@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/SideBar.css';
-import Resume from '../images/First_Resume.PDF';
+import Resume from '../images/Rogelio_Lopez_Resume.pdf';
 
 function SideBar({toggleSidebar, setToggleSidebar, togglePopupBox, setTogglePopupBox}) {
 

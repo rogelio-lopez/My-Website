@@ -5,7 +5,7 @@ import RetroLines from '../components/RetroLines';
 import Burger from '../components/Burger';
 import SideBar from '../components/SideBar';
 
-import Resume from '../images/First_Resume.PDF';
+import Resume from '../images/Rogelio_Lopez_Resume.pdf';
 
 function Home({togglePopupBox, setTogglePopupBox}) {
 
