@@ -12,9 +12,12 @@ footer p a{
 footer ul{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 150px;
   height: 50px;
+}
+footer li{
+  margin: 0 15px;
 }
 footer ul i{
   font-size: 25px;

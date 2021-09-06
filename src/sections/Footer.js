@@ -24,13 +24,6 @@ function Footer() {
             <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/rojo_lopz/"
-            target="_blank" 
-            rel="noreferrer">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </li>
       </ul>
     </footer>
   )
